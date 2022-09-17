@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: var(--main-bg-color);
+    justify-items: center;
+    font-family: Arial;
+}
+
