@@ -1,0 +1,28 @@
+.header_logo {
+    margin-top: 2rem;  
+    margin-bottom: 3rem;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    list-style: none;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.navigation__list-item a {
+    text-decoration: none;
+    color: var(--link-items-color);
+    background-color: var(--main-items-color);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.navigation__list-item a:hover {
+    border: 1px solid var(--red-color)
+}
+
+

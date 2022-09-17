@@ -1,0 +1,106 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2.5rem;
+    max-width: 62.5rem;
+    background-color: var(--main-items-color);
+}
+
+
+.section_1 {
+    text-align: right;
+    padding: 3rem;
+    position: relative;
+}
+
+.section_1>h2 {
+    font-size: 30px;
+}
+
+.section_1>p {
+    font-size: 20px;
+}
+
+
+.section_1::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: var(--red-color);
+    position: absolute; 
+    margin-left: 26.4rem;
+    margin-top: -1rem;
+}
+
+/*button styling*/
+
+.section_1>button {
+    text-transform: uppercase;
+    padding: 1rem 1.6rem;
+    background-color: var(--red-color);
+    color: var(--main-items-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* styling bike picture */
+
+.section_2 {
+    width: 31rem;
+}
+
+/* styling 3rd cell from grid */
+
+.section_3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 3rem;
+    background-color: var(--main-bg-color);
+    margin: 0px;
+    color: var(--advantages-color);
+    background-image: url(/main/images/onda.svg);
+}
+
+/* styling 4th cell from grid */
+
+.section_4 {
+    background-color: var(--main-items-color);
+    /* padding: 2rem; */
+}
+
+.section_4-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 2.3rem; 
+}
+
+.section_4-list p {
+    grid-column: 2;
+    margin-top: -1rem;
+}
+
+.section_4-list h2 {
+    grid-column: 2;
+    margin-top: -0.2rem;
+}
+
+
+
+.section_4-list:nth-child(odd) {
+    background-color: var(--main-bg-color);
+}
+
+/* styling the footer */
+
+footer {
+    text-align: center;
+    background-color: var(--main-items-color);
+    width: 100%;
+    padding: 2rem;
+    font-size: larger;
+}
