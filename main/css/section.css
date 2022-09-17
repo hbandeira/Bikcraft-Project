@@ -29,7 +29,7 @@ section {
     height: 0.3rem;
     background-color: var(--red-color);
     position: absolute; 
-    margin-left: 26.4rem;
+    margin-left: 28.5rem;
     margin-top: -1rem;
 }
 
@@ -46,6 +46,11 @@ section {
     font-size: 1rem;
 }
 
+button:hover {
+    background-color: #631912;
+
+}
+
 /* styling bike picture */
 
 .section_2 {
@@ -55,28 +60,31 @@ section {
 /* styling 3rd cell from grid */
 
 .section_3 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: right;
+    font-size: 3rem;
     padding: 3rem;
     background-color: var(--main-bg-color);
     margin: 0px;
+    background-image: url(/main/images/onda.svg);   
+}
+
+.section_3 h2 {
+    text-transform: uppercase;
+    text-align: right;
     color: var(--advantages-color);
-    background-image: url(/main/images/onda.svg);
 }
 
 /* styling 4th cell from grid */
 
 .section_4 {
     background-color: var(--main-items-color);
-    /* padding: 2rem; */
+    padding: 2rem;
 }
 
 .section_4-list {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
-    padding: 2.3rem; 
+    padding: 2.3rem;
 }
 
 .section_4-list p {
@@ -87,6 +95,14 @@ section {
 .section_4-list h2 {
     grid-column: 2;
     margin-top: -0.2rem;
+}
+
+.section_4-list {
+    border-left: 0.3rem solid transparent;
+}
+
+.section_4-list:hover {
+    border-left: 0.3rem solid var(--red-color);
 }
 
 
