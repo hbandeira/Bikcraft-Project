@@ -6,11 +6,24 @@ section {
     background-color: var(--main-items-color);
 }
 
+/* @media (max-width: 62.5rem){
+    section {
+        grid-template-columns: auto;
+        max-width: 100vh;
+        gap: 2rem;
+    }
+} */
 
 .section_1 {
     text-align: right;
     padding: 3rem;
     position: relative;
+}
+
+@media (max-width: 62.5rem){
+    .section_1 {
+        text-align: center;
+    }
 }
 
 .section_1>h2 {
@@ -21,6 +34,7 @@ section {
     font-size: 20px;
 }
 
+/* Add red detail to section */
 
 .section_1::before {
     content: '';
@@ -32,6 +46,7 @@ section {
     margin-left: 28.5rem;
     margin-top: -1rem;
 }
+
 
 /*button styling*/
 
@@ -55,6 +70,12 @@ button:hover {
 
 .section_2 {
     width: 31rem;
+}
+
+@media (max-width: 62.5rem){
+    .section_2 {
+        width: 100%;
+    }
 }
 
 /* styling 3rd cell from grid */
@@ -110,6 +131,29 @@ button:hover {
 .section_4-list:nth-child(odd) {
     background-color: var(--main-bg-color);
 }
+
+
+/* Responsive */
+
+@media (max-width: 62.5rem){
+    section {
+        grid-template-columns: auto;
+        max-width: 100vh;
+        gap: 2rem;
+    }
+    .section_1::before {
+        content: '';
+        display: block;
+        width: 0.3rem;
+        height: 4rem;
+        margin-top: -5rem;
+        margin-left: 45%;
+    }
+    .section_3 h2 {
+        text-align: center;
+    }
+}
+
 
 /* styling the footer */
 
